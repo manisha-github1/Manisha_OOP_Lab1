@@ -9,7 +9,7 @@ public class CredentialService implements ICredentials {
 
 	@Override
 	public String generateEmailAddress(Employee employee, String department) {
-		// TODO Auto-generated method stub
+		
 		//Generate an email with the following syntax firstNamelastName@department.company.com
 		
 		return employee.getFirstName()+employee.getLastName()+"@"+department+".company.com";
@@ -18,7 +18,7 @@ public class CredentialService implements ICredentials {
 
 	@Override
 	public String generatePassword() {
-		// TODO Auto-generated method stub
+		
 		String capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		String smallLetters = "abcdefghijklmnopqrstuvwxyz";
 		String numberLetters = "0123456789";
@@ -26,8 +26,6 @@ public class CredentialService implements ICredentials {
 		String values = capitalLetters+smallLetters+numberLetters+specialLetters  ;
 		Random random = new Random();
 		String password  = "";
-		
-		//System.out.println("Random Character is "+values.charAt(random.nextInt(values.length())));
 		
 		String capChar =   String.valueOf(capitalLetters.charAt(random.nextInt(capitalLetters.length())));
 		String smlChar = 	String.valueOf(smallLetters.charAt(random.nextInt(smallLetters.length())));
@@ -45,7 +43,7 @@ public class CredentialService implements ICredentials {
 	}
 
 	public void showCredentials(Employee employee) {
-		// TODO Auto-generated method stub
+	
 		String credential ="";
 		System.out.println( "Dear " + employee.getFirstName()+  ", here are your credentials..." );
 		System.out.println( "Email : " +employee.getEmail() );

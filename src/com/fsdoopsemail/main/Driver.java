@@ -12,13 +12,7 @@ public class Driver {
      public static Scanner scanner =  new Scanner( System.in );
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//Create employee object hard code the value
-		//Print the department options
-		//get user input
-		//print user inputs
-		//ICrednetial interface
-		//Determine the department of the new employee (Technical, Admin, Human Resource, Legal)
+		
 		
 		Employee employee = new Employee("manisha","paliwal");
 		 
@@ -42,7 +36,7 @@ public class Driver {
 	}
 
 	private static void displayMenu() {
-		// TODO Auto-generated method stub
+	
 		System.out.println("Please Enter the Departments from the followings ");
 		System.out.println("1. Technical");
 		System.out.println("2. Admin");
